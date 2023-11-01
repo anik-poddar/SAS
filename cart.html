@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="home">
+        <p>S H O P &nbsp; E A S E</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index2.html">H O M E</a></li>
+                <li><a href="about.html">A B O U T</a></li>
+                <li><a href="#">C A T E G O R I E S</a></li>
+                <!-- <li><a href="#">B L O G</a></li> -->
+                <li><a href="contact.html">C O N T A C T</a></li>
+                <li><a href="login.html"><button class="btn2">L O G I N</button> </a></li>
+                <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+<!-- --------------------------------cart------------------------------- -->
+    <div class="small-container cart-page">
+        <table>
+            <tr class="heading">
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img class="banana" src="images/banana.jpg" alt="">
+                        <div>
+                            <p>Banana</p>
+                            <small>Price: ₹30</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹50</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img class="wheat" src="images/wheat.png" alt="">
+                        <div id="wheat">
+                            <p>Weefa wheat</p>
+                            <small>Price: ₹99</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹99</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img class="grapes" src="images/sweet-green-grapes-case-14kg.jpg" alt="">
+                        <div>
+                            <p>Grapes</p>
+                            <small>Price: ₹27</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹27</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹398</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>₹40</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₹438</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
