@@ -126,7 +126,13 @@ th{
     padding: 15px;
     color: white;
     background-color: #009579;
-    font-weight: normal;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+th:hover{
+    color: black;
 }
 
 td{
@@ -139,31 +145,34 @@ td input{
     padding: 5px;
 }
 td a{
-    color:#69a50e;
-    font-size: 12px;
+    color:red;
+    font-size: 15px;
+    font-weight: 400;
     text-decoration: none;
+    transition: 0.5s;
 }
 td a:hover{
-    color: #009579;
+    color: black;
 }
 td img{
-    width: 14%;
+    width: 24%;
     /* height: 80px;     */
     margin-right: 10px;
 }
 .grapes{
-    width: 14%;
+    width: 24%;
     height: 10%;
 }
 .wheat{
     /* height: 10px; */
     /* image-resolution: 20px; */
     width: 153px;
-    height: 118px;
+    height: 138px;
+    margin-left: 40px;
 }
 
 #wheat{
-    margin-left: -11px;
+    margin-left: 30px;
 }
 .total-price{
     display: flex;
@@ -183,8 +192,28 @@ th:last-child{
     text-align: right;
 }
 .small-container{
-    background:rgba(255,255,255, 0.5);   
+    background:rgba(255,255,255, 0.4);   
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.cart-info p{
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.cart-info p:hover{
+    transform: translateX(10px);
+    color: #009579;
+}
+.input{
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #009579;
+}
+.input:hover{
+    background-color: #009579;
+    color: white;
 }
