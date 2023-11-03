@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2585d345b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/bw\ bg.png);
+            width: 100%;
+            background-size: 1200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-color: #FAF9F8;
+            /* opacity: 0.5; */
+        }
+
+        .home {
+            font-family: 'Assistant', sans-serif;
+            /* font-weight: 550; */
+            background: rgba(255, 255, 255, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 92px;
+            font-weight: 300;
+        }
+
+        nav ul li {
+            /* right: 20px; */
+            list-style: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 3px 0;
+            /* transition: 0.5s; */
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, #1E3706, #68d106);
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        .cart {
+            cursor: pointer;
+        }
+
+        .btn2 {
+            width: 150px;
+            font-size: 20px;
+            padding: 4px;
+            /* margin-top: 40px; */
+            font-family: 'Assistant', sans-serif;
+            color: white;
+            /* background: #1E3706; */
+            border-radius: 23px;
+            cursor: pointer;
+            font-weight: 550;
+            transition: 0.5s;
+            color: black;
+            border: none;
+            background: white;
+            transition: 0.5s;
+        }
+
+        .btn2:hover {
+            background: #009579;
+            color: white;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .home p {
+            margin-left: 110px;
+            font-size: 22px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        body {
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background: url(images/high\ op.png);
+            width: 100%;
+            background-size: 1200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .category {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 6px;
+            padding: 20px 60px 30px 40px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            /* border: 1px solid #ddd; */
+            border-radius: 5px;
+            margin: 10px;
+            float: left;
+            width: calc(33.33% - 20px);
+            /* Three columns, with margins */
+            box-sizing: border-box;
+            transition: background-color 0.5s;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: 'Assistant', sans-serif;
+        }
+        .cold {
+            text-decoration: none;
+            color: black;
+        }
+
+        .category:hover {
+            background-color: #009579;
+            color: white;
+        }
+        
+
+        .category img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .category {
+                width: calc(50% - 20px);
+                /* Two columns on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .category {
+                width: 100%;
+                /* Single column on even smaller screens */
+            }
+        }
+
+        
+
+        .dairy {
+            width: 60%;
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .colddr {
+            width: 60%;
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .chips {
+            width: 40%;
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .ice {
+            width: 40%;
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .fries {
+            width: 30%;
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .category h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .category p {
+            display: flex;
+            justify-content: center;
+        }
+        .breakfast{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <p>S H O P &nbsp; E A S E</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index2.html">H O M E</a></li>
+                <li><a href="about.html">A B O U T</a></li>
+                <li><a href="categories.html">C A T E G O R I E S</a></li>
+                <!-- <li><a href="#">B L O G</a></li> -->
+                <li><a href="contact.html">C O N T A C T</a></li>
+                <li><a href="login.html"><button class="btn2">L O G I N</button> </a></li>
+                <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div class="category">
+            <img class="dairy" src="images/category1.jpg" alt="Category 1">
+            <h2>Dairy,Bread and eggs</h2>
+            <p>Dairy Products.</p>
+        </div>
+        <div class="category">
+            <img class="colddr" src="images/category2.jpg" alt="Category 2">
+            <h2>Refreshing</h2>
+            <p><a class="cold" href="categoriescolddri.html">Cold Drink and juices.</a></p>
+        </div>
+        <div class="category">
+            <img class="chips" src="images/category3.jpg" alt="Category 3">
+            <h2>Snacks and Munchiness</h2>
+            <p>Chips and Crackers.</p>
+        </div>
+        <div class="category">
+            <img class="ice" src="images/category4.jpg" alt="Category 4">
+            <h2>Sweet Delight</h2>
+            <p>Ice Creams and Chocolates.</p>
+        </div>
+        <div class="category">
+            <img class="fries" src="images/category5.jpg" alt="Category 5">
+            <h2 class="breakfast">Breakfast and Instant Food</h2>
+            <p>Noodles and Fries.</p>
+        </div>
+    </div>
+</body>
+
+</html>

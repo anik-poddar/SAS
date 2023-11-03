@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Drinks & Juices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2585d345b.js" crossorigin="anonymous"></script>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/bw\ bg.png);
+            width: 100%;
+            background-size: 1200px;
+            background-size: cover;
+            background-position: center;
+            /* background-repeat: no-repeat; */
+            height: 100vh;
+            /* background-color: #FAF9F8; */
+            font-family: 'Assistant', sans-serif;
+            /* opacity: 0.5; */
+        }
+
+        .home {
+            font-family: 'Assistant', sans-serif;
+            /* font-weight: 550; */
+            background: rgba(255, 255, 255, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 92px;
+            font-weight: 300;
+        }
+
+        nav ul li {
+            /* right: 20px; */
+            list-style: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 3px 0;
+            /* transition: 0.5s; */
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: linear-gradient(to right, #1E3706, #68d106);
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        .cart {
+            cursor: pointer;
+        }
+
+        .btn2 {
+            width: 150px;
+            font-size: 20px;
+            padding: 4px;
+            /* margin-top: 40px; */
+            font-family: 'Assistant', sans-serif;
+            color: white;
+            /* background: #1E3706; */
+            border-radius: 23px;
+            cursor: pointer;
+            font-weight: 550;
+            transition: 0.5s;
+            color: black;
+            border: none;
+            background: white;
+            transition: 0.5s;
+        }
+
+        .btn2:hover {
+            background: #009579;
+            color: white;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .home p {
+            margin-left: 110px;
+            font-size: 22px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 6px;
+            padding: 20px 60px 30px 40px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 20px;
+            width: 40%;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .product:hover{
+            background-color: #009579;
+            color: white;
+        }
+
+        .product img {
+            width: 20%;
+            height: auto;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .cart-button, .buy-button, .quantity-input {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            padding: 10px;
+        }
+
+        .cart-button:hover, .buy-button:hover, .quantity-input:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .quantity-input {
+            padding: 10px 10px; /* Smaller size */
+            margin-right: 10px; /* Add some spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <p>S H O P &nbsp; E A S E</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index2.html">H O M E</a></li>
+                <li><a href="about.html">A B O U T</a></li>
+                <li><a href="categories.html">C A T E G O R I E S</a></li>
+                <!-- <li><a href="#">B L O G</a></li> -->
+                <li><a href="contact.html">C O N T A C T</a></li>
+                <li><a href="login.html"><button class="btn2">L O G I N</button> </a></li>
+                <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div class="product">
+            <img src="images/drink1.jpg" alt="Cold Drink 1">
+            <h2>Sprite</h2>
+            <p>Refreshing carbonated drink.</p>
+            <p class="price">Rs. 95</p>
+            <button class="buy-button">Buy</button>
+            <input class="quantity-input" type="number" value="1">
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/drink2.jpg" alt="Cold Drink 2">
+            <h2>Limca</h2>
+            <p>Sparkling water with lemon flavor.</p>
+            <p class="price">Rs.90</p>
+            <button class="buy-button">Buy</button>
+            <input class="quantity-input" type="number" value="1">
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/drink3.jpg" alt="Juice 1">
+            <h2>Tropicana Orange Delight</h2>
+            <p>Delicious and fresh orange juice.</p>
+            <p class="price">Rs. 135</p>
+            <button class="buy-button">Buy</button>
+            <input class="quantity-input" type="number" value="1">
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/drink4.jpg" alt="Juice 2">
+            <h2>Real Apple Juice</h2>
+            <p>Natural apple juice, no added sugar.</p>
+            <p class="price">Rs. 60</p>
+            <button class="buy-button">Buy</button>
+            <input class="quantity-input" type="number" value="1">
+            <button class="cart-button">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/drink5.jpg" alt="Cold Drink 3">
+            <h2>Coca-Cola</h2>
+            <p>Classic cola beverage.</p>
+            <p class="price">Rs. 95</p>
+            <button class="buy-button">Buy</button>
+            <input class="quantity-input" type="number" value="1">
+            <button class="cart-button">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
